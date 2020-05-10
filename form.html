@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head  -->
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <!--body-->
+    <body>
+        <header class="main-header">
+        <div>
+            <h1 class="title">Social Media Learner</h1>
+        </div>
+         <!--navigation bar-->
+       <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+                <div class="dropdown">
+                <button href="socialmedia.html" class="dropbtn"><a href="socialmedia.html">Social Media</a></button>
+                    <div class="dropdown-content">
+                      <a href="snapchat.html">Snapchat</a>
+                      <a href="snapchat2.html">Snapchat page 2</a>
+                      <a href="instagram.html">Instagram</a>
+                      <a href="instagram2.html">Instagram page 2</a>
+                      <a href="tiktok.html">Tik Tok</a>
+                      <a href="tiktok2.html">Tik Tok page 2</a>
+                      <a href="twitter.html">Twitter</a>
+                      <a href="twitter2.html">Twitter page 2</a>
+                      <a href="youtube.html">YouTube</a>
+                      <a href="youtube2.html">YouTube page 2</a>
+                    </div>
+                </div>
+            <a href="form.html">Form</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <!-- The main body  --> 
+        </header>
+        <form action="userdata.html" method="get">
+            <h2>Conatct us form.</h2>
+            <fieldset>
+                <!-- User contact information-->
+                <legend>Contact info.</legend>
+
+                <p class=instrustions>Please fill in your details below.</p>
+                
+                <div class="divA">
+                    <label for="firstname">First Name: </label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+                
+                <div class="divA">
+                    <label for="lastname">Last Name: </label>
+                    <input type="text" name="lastname" id="lastname">                   
+                </div>
+            
+                <div class="divA">
+                    <label for="email">Email:  </label>
+                    <input type="email" name="email" id="email" required>    
+                </div>
+            
+                <div class="divA">
+                    <label for="tel">Phone: </label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                
+            </fieldset>
+            <!-- A bit about the user-->
+            <fieldset>
+                
+                <legend>A bit about you.</legend>
+                
+                <p>When and where were you born?</p>
+                
+                <div class="divA">
+                    <label for="country">Country: </label>
+                    <input type="text" name="country" id="country" placeholder="Ireland">
+                </div>
+            
+                <div class="divA">
+                    <label for="nationality">Nationality: </label>
+                    <input type="text" name="nationality" id="nationality" placeholder="If dual, enter both">
+                </div>
+                
+                <div class="divA">
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id="age" min="0">
+                </div>
+                
+                <div class="divA">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+            </fieldset>
+            <!-- What the user is using this website for-->
+            <fieldset>
+                
+                <legend>What you are using this site for.</legend>
+                <div class="divB">
+                    <input type="checkbox" name="basics" id="basics">
+                    <label for="basics">To learn the basics</label>
+                </div>
+                
+                <div class="divB">
+                    <input type="checkbox" name="tolearn" id="tolearn">
+                    <label for="tolearn">To learn more</label>
+                </div>
+                
+                <div class="divB">
+                    <input type="checkbox" name="learning" id="learning">
+                    <label for="learning">To implament it into my learning</label>
+                </div>
+            
+                <p>How helpful was this site.</p>
+                
+                <div class="divC">
+                    <input type="radio" name="helpful" id="very" value="very" checked>
+                    <label for="very">Very</label>
+                </div>
+                
+                <div class="divC">
+                    <input type="radio" name="helpful" id="medium" value="medium">
+                    <label for="medium">Medium</label>
+                </div>
+                
+                <div class="divC">
+                    <input type="radio" name="helpful" id="notatall" value="notatall">
+                    <label for="notatall">Not at all.</label>
+                </div>
+            </fieldset>
+            <!--What app do they use most often-->
+            <fieldset>
+                <legend>Choose which site you use most often.</legend>
+                <div class="divD">
+                    <label for="socialmedia">Choose your most used: </label>
+                    <select name="socilmedia" id="socialmedia">
+                        <option>Snapchat</option>
+                        <option>Instagram</option>
+                        <option>Tik Tok</option>
+                        <option>Twitter</option>
+                        <option>YouTube</option>
+                    </select>
+                </div>
+                
+                <p>Questions and suggestions.</p>
+                <div class="divD"> 
+                    <label for="qands">Your questions and/ or suggestions.</label>
+                    <textarea name="qands" id="qands"></textarea>
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <div class="leftbutton">                                        
+                    <button type="submit"> Submit form</button>
+                </div>
+                
+                <div class="rightbutton">
+                    <button type="reset">Reset button</button>
+                </div>
+                
+            </div>
+
+        </form>
+        <!-- footer -->
+       <div class="footer"><footer><p class="p2"><a href="sitemap.html">Sitemap</a></p>
+            <p>Developer: John Garry</p>
+            <p>Copyright © All rights reseved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

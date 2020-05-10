@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head  -->
+<head>
+    <meta charset="utf-8">
+    <title>Form results - submitted user data</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<!--body-->    
+<body>
+    
+    <div class="results">
+        <h1>You are registered!!!</h1>
+        <p>The information you submitted has been recieved, thank you. We will process your registration and sen you twenty Easter egss by return.</p>
+        
+        <h3>Your submitted data</h3>
+    
+    
+        <div id="userdata"></div>
+        
+        <script>
+            const datalist = document.getElementById("userdata")
+            new URLSearchParans(window.location.search).forEach((value, name) => {
+                datalist.append('${name}: ${value}')
+                datalist.append{document.createElement('br')}
+            })
+        </script>
+    
+        <p><a href="Form.html">Return to Fourm page</a></p>
+    </div>
+    <!-- footer -->
+    <div class="footer"><footer><p class="p2"><a href="sitemap.html">Sitemap</a></p>
+            <p>Developer: John Garry</p>
+            <p>Copyright © All rights reseved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

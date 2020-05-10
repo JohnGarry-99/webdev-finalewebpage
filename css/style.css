@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #AA3939;
+    font-size: 12pt;
+}
+/*--------------navigation bar and title-------------------*/
+.title{
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #226666 ;
+    margin-top: 1%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 17px;
+    color:white;
+    text-align: center;
+    padding: 14px 70px;
+    margin: 3%;
+    text-decoration: none;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+    background-color:#226666;
+}
+.dropdown .dropbtn{
+   cursor: pointer;
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;    
+}
+
+.navbar a:hover, dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:#AA3939; 
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #226666;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover a:hover{
+    background-color: #AA3939;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*-------I could not figure out how to get the dropdown menu to actually dropdown.-----------------------------------------*/
+
+/*----------- Index------------------------------*/
+
+.intro{
+    font-family: "PT Sans, san";
+    background-color: #226666;
+    color:white;
+    font-size: 20px;
+    margin-left: 400px;
+    margin-right: 460px;
+    padding: 20px;
+    border-radius: 20px;
+    
+    
+}
+/*------------table--------------------*/
+
+table{
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td{
+    text-align: center;
+    padding: 15px;
+    background-color: #226666;
+    color: white;
+    font-size: 20px
+}
+
+th{
+    border-radius: 20px
+}
+td{
+    background-color: #7C9F35;
+    border-radius: 20px;
+    
+}
+/*-------------About page----------------------*/
+#layout {
+    
+    display:grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-areas: 
+        "header header header"
+        "two main four"
+        "footer footer footer"
+}
+.item{
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.one{
+    background-color: #226666;
+    grid-area: header;
+}
+
+.two{
+    background-color: #226666;
+    grid-area: two;
+}
+
+.three{
+    background-color: #7C9F35;
+    grid-area: main;
+}
+
+.four{
+    background-color: #226666;
+    grid-area: four;
+}
+
+.five{
+    background-color: #226666;
+    grid-area: footer
+}
+/*---------- Social Media Pages -----------------*/
+p{
+    color: white;
+    font-family: "PT Sans, san";
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.p2{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.p3{
+    background-color: #7C9F35;
+    margin-left: 20px;
+    margin-right: 1740px;
+    border-radius: 20px;
+}
+
+h3{
+    color: white;
+    margin-left: 20px
+}
+
+.text{
+    background-color: #226666;
+    border: 2px solid #226666;
+    border-radius: 20px;
+    margin-bottom: 20px; 
+}
+
+.heading{
+    padding-top:10px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+
+.nextpage{
+    width: 100%;
+    background-color: #7C9F35;
+    color: black;
+    text-align: center;
+}
+
+.snap{
+    background-color: #226666;
+    border: 2px solid #226666;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.insta{
+    background-color: #226666;
+    border: 2px solid #226666;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.tiktok{
+    background-color: #226666;
+    border: 2px solid #226666;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.twitter{
+    background-color: #226666;
+    border: 2px solid #226666;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.youtube{
+    background-color: #226666;
+    border: 2px solid #226666;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/*-----------Images--------------------*/
+
+.image{
+    height: 150px;
+    width: auto;
+    margin-left: -15px;
+    
+}
+
+.image2{
+    height: 120px;
+    width: auto;
+    margin-left: 25px;
+    border-radius: 20px;
+}
+
+.image3{
+    height: 120px;
+    width: auto;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.image4{
+    height: 120px;
+    width: auto;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.image5{
+    height: 120px;
+    width: auto;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+#image{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+/*----------The form, fieldset and legened------*/
+
+form, .results{
+    position: relative;
+    top: 50px;
+    width: 400px;
+    margin: auto;
+    border: 2px solid #226666;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: montsorrat, verdana, sans-serif;
+    background: #226666;
+}
+
+h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+h2{
+    color: white;
+    margin-bottom: 20px;
+}
+fieldset{
+    background-color: #7C9F35;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-size: 1.4em;
+    color: #7C9F35;
+    background-color: #ffffff;
+    padding:3px 5px;
+    border: 1px dotted #226666;
+    border-radius:5px;
+}
+
+.setup{
+    width:auto;
+    height: 400px;
+    margin-left: 15px;
+}
+/*-----------Form content - divs ---------*/
+
+.instrustions{
+    font-style: italic;
+}
+
+.divA, .divB, .divC, .divD{
+    margin: 12px 0;
+}
+
+.divA input{
+    position: absolute;
+    left: 130px;
+    width: 200px;
+    border-radius: 6px;
+    padding: 4px;
+    color: #AA3939;
+}
+
+#age{
+    width: 40px;
+}
+
+/*------------ The buttons -----------------*/
+
+button {
+    padding:5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: #d9efea 1px solid;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #AA3939;
+}
+
+.leftbutton, .rightbutton{
+    width: 50%;
+    float: left;
+}
+
+.submit{
+    float: right;
+}
+
+.reset{
+    float: left;
+}
+
+/*--------------The results page-------------*/
+
+.results{
+    color: white;
+}
+
+.results p{
+    margin: 20px;
+}
+
+#userdata{
+    color: #7C9F35;
+;
+}
+
+.results a {
+    color: #226666;
+}
+
+.results a:hover{
+    color: #AA3939;
+}
+/*------------sitemap----------------------*/
+
+#sitemap{
+    font-family: sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul{
+    margin-left: 10px;
+}
+
+ul ul{
+    margin-left:0px;
+}
+
+ul ul ul{
+    margin-left: 20px;
+
+}
+/* could not figure out how to get the site map to line up properly.*/
+/*-----------------footer------------------*/
+
+.footer{
+    width: 100%;
+    background-color: #226666;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 200px;
+}
